@@ -18,12 +18,13 @@ def find_greater_pair(src)
   # Produce a new Array that contains the larger number of each of the pairs
   # that are in the inner Arrays
   newarr=[]
-  src.each do |i|
+  src.each{ |i|
     if i[0]>i[1]
       newarr.push(i[0])
     else
       newarr.push(i[1])
    end
+  }
   return newarr
 end
 
